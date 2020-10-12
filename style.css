@@ -298,7 +298,7 @@ width: 100%;
      width: 100%;
      margin-top: 30px;
      display: grid;
-
+grid-template: repeat(3, 200px) / repeat(3, 300px);
  justify-content: center;
      grid-gap: 130px
  }
