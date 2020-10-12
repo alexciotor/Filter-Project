@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake bakery</title>
+    
+    
+    
+<link rel="stylesheet" href="./Cake bakery_files/style.css"><link href="./Cake bakery_files/css2" rel="stylesheet"><link rel="stylesheet" href="./Cake bakery_files/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"></head>
+<body>
+<!-- Nav Bar  -->
+<nav class="nav">
+<!--Logo Image-->    
+<div class="logo">
+     <img src="./Cake bakery_files/Logo.png" alt="" class="logo">
+</div>
+       
+<div class="nav-buttons">
+<ul class="nav-buttonlist">
+    <li class="nav-elements Home">Home</li>
+    <li class="nav-elements About ">About</li>
+    <li class="nav-elements Store">Store</li>
+</ul>
+</div>
+     <div class="cart-elements">
+<span class="phone"> <i style="margin-right: 0px;" class="fas fa-phone">  + 123 456 789</i> 
+
+</span>
+<span class="cart"><i style="margin-right: 10px;" class="fas fa-shopping-cart"></i>2 Items - $10.49 </span>
+       
+     </div>
+ 
+    
+        <!--
+        <li class="nav-elements Phone"><i style="width: 100px; color: black;" class="fas fa-phone"></i></li>
+        <li class="nav-elements Cart"> <i style="width: 100px; color: black;" class="fas fa-shopping-cart"></i> </li>
+-->
+     
+   
+
+</nav>
+<!--First section of the page-->
+ 
+    <div class="section1">
+
+        <div class="content1">
+        <h1>Welcome to our <span class="backery"> Backery</span></h1>
+        <button class="explore">Explore</button>
+    </div>
+    
+    </div>
+
+
+<!--   Secont Section of page    ABOUT US  SECTION      -->
+<section class="section2">
+
+
+<div class="sec2-content">
+    <div class="text-content-sect2">
+        <h1>About <span class="us"> Us</span></h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod quaerat obcaecati earum eligendi soluta accusamus labore iste? Quas dolor eaque incidunt repellendus ullam quis nostrum vel. Non eligendi quas a.</p>
+        <button class="explore2">Explore</button>
+    </div>
+   
+   
+    <div class="img-container">
+        <img class="img-sec2" src="./Cake bakery_files/macaroons.jpg" alt="">
+    </div>
+</div>
+
+ 
+
+ 
+</section>
+
+<section class="section3">
+
+    <h1>Our <span class="store"> Store </span></h1>
+    <div class="button-list">
+        <button class="btn">All</button>
+        <button class="btn">Cakes</button>
+        <button class="btn">Cuocakes</button>
+        <button class="btn">Sweets</button>
+        <button class="btn">Doughnuts</button> <br>
+      <input type="text" id="search">
+      <div class="images">
+          <img src="./Cake bakery_files/cake1.jpg" alt="" class="img">
+          <img src="./Cake bakery_files/cake2.jpg" alt="" class="img">
+          <img src="./Cake bakery_files/cake3.jpg" alt="" class="img">
+          <img src="./Cake bakery_files/cup5.jpg" alt="" class="img">
+          <img src="./Cake bakery_files/cup2.jpg" alt="" class="img">
+          <img src="./Cake bakery_files/cup6.jpg" alt="" class="img">
+          <img src="./Cake bakery_files/dou1.jpg" alt="" class="img">
+          <img src="./Cake bakery_files/dou2.jpg" alt="" class="img">
+          <img src="./Cake bakery_files/dou3.jpg" alt="" class="img">
+          <img src="http://127.0.0.1:5500/index.html" alt="" class="img">
+          <img src="http://127.0.0.1:5500/index.html" alt="" class="img">
+          <img src="http://127.0.0.1:5500/index.html" alt="" class="img">
+      </div>
+    </div>
+
+</section>
+
+    <script src="./Cake bakery_files/main.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+ </body></html>

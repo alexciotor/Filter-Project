@@ -6,57 +6,89 @@
     <title>Cake bakery</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+
 </head>
 <body>
 <!-- Nav Bar  -->
 <nav class="nav">
-<!--Logo Image-->
-    
+<!--Logo Image-->    
+<div class="logo">
+     <img  src="./Photos/Logo/Logo.png" alt="" class="logo">
+</div>
+       
+<div class="nav-buttons">
+<ul class="nav-buttonlist">
+    <li class="nav-elements Home">Home</li>
+    <li class="nav-elements About ">About</li>
+    <li class="nav-elements Store">Store</li>
+</ul>
+</div>
+     <div class="cart-elements">
+<span class="phone"> <i style="margin-right: 0px;"  class="fas fa-phone">  + 123 456 789</i> 
 
-    <ul class="nav-list">
-        <img  src="./Photos/Logo/Logo.png" alt="" class="logo">
-       <div class="nav-buttons">
-        <li class="nav-elements Home">Home</li>
-        <li class="nav-elements About ">About</li>
-        <li class="nav-elements Store">Store</li>
-    </div>
-    <div class="navCart">
+</span>
+<span class="cart"><i style="margin-right: 10px;" class="fas fa-shopping-cart"></i>2 Items - $10.49 </span>
+       
+     </div>
+ 
+    
+        <!--
         <li class="nav-elements Phone"><i style="width: 100px; color: black;" class="fas fa-phone"></i></li>
-        <li class="nav-elements Cart"> <i style="width: 100px; color: black;" class="fas fa-shopping-cart"></i>hello </li>
-    </div>
-    </ul>
+        <li class="nav-elements Cart"> <i style="width: 100px; color: black;" class="fas fa-shopping-cart"></i> </li>
+-->
+     
+   
 
 </nav>
 <!--First section of the page-->
+ 
+    <div class="section1">
+<div class="overlay"></div>
+        <div class="content1">
+        <h1>Welcome TO our <span class="backery"> Backery</span></h1>
+      <br>  <button class="explore">EXPLORE</button>
+    </div>
+    
+    </div>
 
-<div class="section1">
 
-    <div class="content1">
-    <h1>Welcome to our <span class="backery"> Backery</span></h1>
-    <button class="explore">Explore</button>
-</div>
-
-</div>
-
+<!--   Secont Section of page    ABOUT US  SECTION      -->
 <section class="section2">
 
-    <h1>About Us</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod quaerat obcaecati earum eligendi soluta accusamus labore iste? Quas dolor eaque incidunt repellendus ullam quis nostrum vel. Non eligendi quas a.</p>
-    <button class="explore2">Explore</button>
 
+<div class="sec2-content">
+    <div class="text-content-sect2">
+        <h1>About <span  class="us"> Us</span></h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod quaerat obcaecati earum eligendi soluta accusamus labore iste? Quas dolor eaque incidunt repellendus ullam quis nostrum vel. Non eligendi quas a.</p>
+        <button class="explore2">EXPLORE</button>
+    </div>
+   
+   
+    <div class="img-container">
+        <img class="img-sec2" src="./Photos/Logo/macaroons.jpg" alt="">
+    </div>
+</div>
+
+ 
+
+ 
 </section>
 
 <section class="section3">
+    <div class="header">  <h1>Our <span class="store"> Store </span></h1> </div>
 
-    <h1>Our Store</h1>
+  
     <div class="button-list">
-        <button class="btn">All</button>
-        <button class="btn">Cakes</button>
-        <button class="btn">Cuocakes</button>
-        <button class="btn">Sweets</button>
-        <button class="btn">Doughnuts</button> <br>
-      <input type="text" id="search">
+        <button class="btn">ALL</button>
+        <button class="btn">CAKES</button>
+        <button class="btn">CUPCAKES</button>
+        <button class="btn">SWEETS</button>
+        <button class="btn">DOUGHNUTS</button> <br>
+      
+    </div>
+<div class="input">  <i class="fas fa-search"></i>  <input class="first" style="" type="text" id="search" placeholder="item..."> </div>
       <div class="images">
           <img src="./Photos/Cakes/cake1.jpg" alt="" class="img">
           <img src="./Photos/Cakes/cake2.jpg" alt="" class="img">
@@ -71,10 +103,12 @@
           <img src="" alt="" class="img">
           <img src="" alt="" class="img">
       </div>
-    </div>
+  
 
 </section>
 
     <script src="./main.js"></script>
 </body>
 </html>
+
+ 
