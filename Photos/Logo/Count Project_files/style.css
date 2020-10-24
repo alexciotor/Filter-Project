@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+
+  width: 50%;
+  margin: auto;
+  margin-top: 25vh;
+}
+.content h1 {
+  font-size: 50px;
+}
+#num {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin: 5px;
+  background-color: inherit;
+  border-radius: 10px 10px 10px 10px;
+}
+.Decrease {
+  width: 100px;
+}
+.Reset {
+  width: 60px;
+}
+
+.Increase {
+  width: 100px;
+}

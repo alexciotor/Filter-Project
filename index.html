@@ -79,35 +79,45 @@
 <section class="section3">
     <div class="header">  <h1>Our <span class="store"> Store </span></h1> </div>
 
-  
+  <form action="submit"></form>
     <div class="button-list">
-        <button class="btn">ALL</button>
-        <button class="btn">CAKES</button>
-        <button class="btn">CUPCAKES</button>
-        <button class="btn">SWEETS</button>
-        <button class="btn">DOUGHNUTS</button> <br>
+        <button type="button"    class="btn ALL">ALL</button>
+        <button type="button"    class="btn CAKES">CAKES</button>
+        <button type="button"    class="btn CUPCAKES">CUPCAKES</button>
+        <button type="button"    class="btn SWEETS">SWEETS</button>
+        <button type="button"    class="btn DOUGHNUTS">DOUGHNUTS</button> <br>
       
     </div>
-<div class="input">  <i class="fas fa-search"></i>  <input class="first" style="" type="text" id="search" placeholder="item..."> </div>
-      <div class="images">
-          <img src="./Photos/Cakes/cake5.jpg" alt="" class="img">
-          <img src="./Photos/Cakes/cake2.jpg" alt="" class="img">
-          <img src="./Photos/Cakes/cake3.jpg" alt="" class="img">
-          <img src="./Photos/CupCakes/cup5.jpg" alt="" class="img">
-          <img src="./Photos/CupCakes/cup2.jpg" alt="" class="img">
-          <img src="./Photos/CupCakes/cup6.jpg" alt="" class="img">
-      <img src="./Photos/other/cake 0.jpg" alt="">
-          <img src="./Photos/doughnuts/dou2.jpg" alt="" class="img">
-          <img src="./Photos/doughnuts/dou3.jpg" alt="" class="img">
-          <img src="" alt="" class="img">
-          <img src="" alt="" class="img">
-          <img src="" alt="" class="img">
+
+<div class="input">  <i  onclick="push()" class="fas fa-search"></i> 
+     <input class="first" value="" type="text" id="search" placeholder="item..."> </div>
+    </form>
+      <div id="image" class="container">
+     
+        <div class="img-text Cake"> <img src="./Photos/Cakes/cake5.jpg" alt="" class="img"> <div class="photo-text"> <li class="text"> Chocolate Cake </li> <li class="price"> 15 $ </li></div></div>
+        <div class="img-text Cake">  <img src="./Photos/Cakes/cake2.jpg" alt="" class="img">  <div class="photo-text">  <li class="text"> Fruit   Cake </li> <li class="price">  10$ </li></div> </div>
+        <div class="img-text Cake">  <img src="./Photos/Cakes/cake3.jpg" alt="" class="img">  <div class="photo-text">  <li class="text"> Extra Fruit   </li> <li class="price"> 25 $ </li> </div> </div>
+        
+        
+        <div class="img-text Cupcake ">  <img src="./Photos/CupCakes/cup5.jpg" alt="" class="img"> <div class="photo-text">  <li class="text">  Cupcake pack </li> <li class="price"> 8 $ </li></div> </div>
+        <div class="img-text Cupcake">  <img src="./Photos/CupCakes/cup2.jpg" alt="" class="img">  <div class="photo-text"> <li class="text"> Chocolate Cupcake </li> <li class="price"> 5 $ </li> </div></div>
+        <div class="img-text Cupcake">  <img src="./Photos/CupCakes/cup6.jpg" alt="" class="img">  <div class="photo-text"> <li class="text"> Christmas Cupcakes </li> <li class="price"> 12 $ </li></div> </div>
+       
+     
+        <div class="img-text Doughnuts">   <img src="./Photos/other/cake 0.jpg" alt="" class="img" > <div class="photo-text"> <li class="text">  Chocolate Muss </li> <li class="price"> 17 $  </li> </div></div>
+        <div class="img-text Doughnuts">  <img src="./Photos/doughnuts/dou2.jpg" alt="" class="img"> <div class="photo-text"> <li class="text"> Chocolate Doughnuts  </li> <li class="price"> 10$  </li></div> </div>
+        <div class="img-text Doughnuts">  <img src="./Photos/doughnuts/dou3.jpg" alt="" class="img"> <div class="photo-text">  <li class="text"> Candy Sprinkled Doughnuts   </li> <li class="price">  12 $ </li></div></div>
+     
+      
+        <div class="img-text Last">  <img src="./Photos/other/last three/last1.jpg" alt="" class="img"> <div class="photo-text"> <li class="text"> Cream Fruit Cake </li> <li class="price"> 25 $ </li></div></div>
+        <div class="img-text Last">  <img src="./Photos/other/last three/last2.jpg" alt="" class="img"> <div class="photo-text"> <li class="text"> Happy Maried Pie  </li> <li class="price"> 14 $  </li></div></div>
+        <div class="img-text Last">  <img src="./Photos/other/last three/last3.jpg" alt="" class="img"> <div class="photo-text"> <li class="text"> Chocolate Cupcake  </li> <li class="price"> 3 $ </li></div></div>
+     
       </div>
   
 
 </section>
-
-    <script src="./main.js"></script>
+<script src="./main.js"></script>
 </body>
 </html>
 
