@@ -27,7 +27,7 @@
 },
     {
 
-    photo:"./Photos/CupCakes/cup5.jpg", 
+    photo:"./Photos/CupCakes/cup6.jpg", 
     title: 'Cupcake pack', 
     category:  'Cupcake',     
     price: 8
@@ -35,7 +35,7 @@
     ,  
     {
 
-    photo:"./Photos/CupCakes/cup2.jpg", 
+    photo:"./Photos/CupCakes/cup5.jpg", 
     title: 'Chocolate Cupcake' , 
     category:  'Cupcake' ,     
     price:   5
@@ -47,8 +47,8 @@
     price:  12
 },  
     {
-    photo:"./Photos/CupCakes/cup2.jpg", 
-    title: 'Chocolate Muss', 
+    photo:"./Photos/doughnuts/dou4.jpg", 
+    title: 'Doughnut Pan Cake', 
     category:  'Doughnut',     
     price:  17
 },  
@@ -91,23 +91,6 @@ window.addEventListener('DOMContentLoaded', function(){
 displayMenuItems(menu)
 })
 
-buttons.forEach(button=>{
-    button.addEventListener('click' ,(e)=>{
-        const category = e.currentTarget.dataset.id;
-        const menuCategory = menu.filter(menuItem=>{
-            if(menuItem.category===category){
-                return menuItem
-            }
-        })
-        if(category==='all'){
-            displayMenuItems(menu)
-        }
-        else(displayMenuItems(menuCategory))
-    })
-})
-
-
-
 const displayMenuItems=(menuItems)=>{
     let displaymenu = menuItems.map(item=>{
         return `<article class="section-center">
@@ -125,3 +108,17 @@ displaymenu=displaymenu.join('')
 menus.innerHTML =displaymenu;
 
 }
+buttons.forEach(button=>{
+    button.addEventListener('click' ,(e)=>{
+        const category = e.currentTarget.dataset.id;
+        const menuCategory = menu.filter(menuItem=>{
+            if(menuItem.category===category){
+                return menuItem
+            }
+        })
+        if(category==='all'){
+            displayMenuItems(menu)
+        }
+        else(displayMenuItems(menuCategory))
+    })
+})
